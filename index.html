@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Unit 4 Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.js"
+        integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+<body>
+    <h1 class="display-4">Crystal Collectors!</h1>
+
+    <h2>Directions</h2>
+    <ul class="list-unstyled">
+        <li> 1. A random number is generated on the page.</li>
+        <li> 2. Four gems are also displayed as buttons, each with a different hidden value.</li>
+        <li> 3. Each time the player clicks on a button, that hidden value is added to their total score.</li>
+        <li> 4. If the player matches their score to the random number, they win the game!</li>
+        <li> 5. When the game is restarted, a new random number and new gem values are assigned.</li>
+    </ul>
+
+    <div class="row status">
+
+        <div class="col-sm-2 match" id=match>
+
+            <p>Match:</p>
+        </div>
+        <div class="col-sm-1" id="randomNumber">
+        </div>
+
+
+        <div class="col-sm-1 gameStatistics" id="WINLOST">
+
+            <p id="winn"></p>
+            <p id="win">Win:</p>
+            <p id="lost">Lost:</p>
+
+        </div>
+    </div>
+
+
+    <div class="buttons">
+        <img class="image" id="stone1" src="assets/images/pinkquartz.jpeg">
+        <img class="image" id="stone2" src="assets/images/bluestone.jpeg">
+        <img class="image" id="stone3" src="assets/images/yellowstone.jpeg">
+        <img class="image" id="stone4" src="assets/images/purplestone.jpeg">
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-sm-2 score" id="scoreis">
+
+            <p>Your Score is:</p>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-2 scoreCount" id="score">
+
+
+
+        </div>
+
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
